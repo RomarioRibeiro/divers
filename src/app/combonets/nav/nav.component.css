@@ -1,8 +1,7 @@
-.navegacao{
-  background-color: #c06014;
-}
+.navegacao {
+  width: 200px;
 
-.navegacao .lista{
-  width: 150px;
-  padding: 15px;
+}
+.navegacao i {
+  padding: 10px;
 }
