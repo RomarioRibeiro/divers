@@ -12,6 +12,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
+import { ProdutosComponent } from './views/produtos/produtos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatCardModule } from '@angular/material/card';
     HeadComponent,
     BordaComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,

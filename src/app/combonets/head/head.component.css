@@ -10,3 +10,7 @@
 .header .header-titlo{
   padding: 10px;
 }
+
+.header a{
+  color: #ffff;
+}
