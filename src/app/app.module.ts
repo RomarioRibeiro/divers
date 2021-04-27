@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
-import { ProdutosComponent } from './views/produtos/produtos.component';
+import { CadeiraComponent } from './views/cadeira/cadeira.component';
+import { MesaComponent } from './views/mesa/mesa.component';
+import { SofaComponent } from './views/sofa/sofa.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { ProdutosComponent } from './views/produtos/produtos.component';
     BordaComponent,
     NavComponent,
     HomeComponent,
-    ProdutosComponent
+    CadeiraComponent,
+    MesaComponent,
+    SofaComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { ProdutosComponent } from './views/produtos/produtos.component';
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,28 @@
 <mat-sidenav-container class="contener">
-<mat-sidenav class="navegacao" mode="side" opened fixedInViewport="true" fixedTopGap="64">
-  <mat-nav-list class="lista">
+  <mat-sidenav class="navegacao" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+    <mat-nav-list class="lista">
       <a mat-list-item routerLink="/">
         <i class="material-icons"> home</i>
         Home
       </a>
 
-      <a mat-list-item routerLink="/produtos">
+      <a mat-list-item routerLink="/"  [matMenuTriggerFor]="animals">
 
         <i class="material-icons"> shopping_cart </i>
-        Produtos
+        Produtos >
+        <mat-menu #animals="matMenu">
+
+          <button mat-menu-item [matMenuTriggerFor]="invertebrates">Categoria</button>
+        </mat-menu>
+        <mat-menu #invertebrates="matMenu">
+          <button mat-menu-item routerLink="/cadeira">Cadeira</button>
+          <button mat-menu-item routerLink="/sofa">Sofá</button>
+          <button mat-menu-item routerLink="/mesa">Mesa</button>
+        </mat-menu>
       </a>
-  </mat-nav-list>
-</mat-sidenav>
-<mat-sidenav-content>
- <router-outlet></router-outlet>
-</mat-sidenav-content>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>
