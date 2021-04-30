@@ -1,0 +1,20 @@
+.header {
+  background-color: #6e7c7c;
+}
+.logo{
+  max-width: 100px;
+  text-align: center;
+  display: flex;
+}
+.header-titlo{
+  padding: 10px;
+
+}
+.header a{
+  color: #ffff;
+}
+.sub {
+display: block;
+margin: 5px auto;
+}
+
